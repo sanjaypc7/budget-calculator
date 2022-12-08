@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./budget.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav text-primary"><h1>BUDGET CALCULATOR</h1></div>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-4 ">
+                <div class="card border border-primary mm  shadow-0 mb-3 m-5" style="max-width: 18rem;">
+                    <div class="card-header text-primary"><h4>Enter your income</h4></div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Enter your name:</h5>
+                        <div class="form-outline">
+                            <input type="text" name="username" id="uname" class="form-control" placeholder="Name" />
+                            <h5 class="card-title">Enter your income:</h5>
+                            <input type="text" name="income" id="uincome" class="form-control" placeholder="income"/>
+                          </div>
+                    </div></div>
+                </div>
+                <div class="col-4">
+                    <div class="card border border-primary mm  shadow-0 mb-3 m-5" style="max-width: 18rem;">
+                        <div class="card-header text-primary"><h4>Enter your expenses</h4></div>
+                        <div class="card-body text-primary">
+                            <h5 class="card-title">Home rent:</h5>
+                            <div class="form-outline">
+                                <input type="text" name="rent" id="urent" class="form-control" placeholder="Enter your rent"  />
+                                <h5 class="card-title">Food:</h5>
+                                <input type="text" name="food" id="ufood" class="form-control" placeholder="Enter your food expenses" />
+                                <h5 class="card-title">Insurance:</h5>
+                                <input type="text" name="insu" id="uinsu" class="form-control" placeholder="Enter your insurance" />
+                                <h5 class="card-title">Electricity bill:</h5>
+                                <input type="text" name="bill" id="ubill" class="form-control" placeholder="Enter your bill" />
+                                <h5 class="card-title">Others:</h5>
+                                <input type="text" name="other" id="uother" class="form-control" placeholder="Enter the amount" /><br>
+                                <button type="button" class="btn btn-primary" onclick="addvalue()">Submit</button>
+                              </div>
+                        </div></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border border-primary mm shadow-0 mb-3 m-5" style="max-width: 18rem;">
+                            <div class="card-header text-primary"><h4>Balance</h4></div>
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Name:</h5>
+                                <input type="text" name="bname" id="bname" class="form-control"disabled readonly /><br>
+                              <h5 class="card-title">Total expenses:</h5>
+                              <input type="text" name="bexp" id="exp" class="form-control" disabled readonly/><br>
+                              <h5 class="card-title">Balance:</h5>
+                              <input type="text" name="bbal" id="bal" class="form-control" disabled readonly/><br>
+                            </div></div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+<script src="./budget.js"></script>
+</html>
